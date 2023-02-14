@@ -11,18 +11,131 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: hsl(217, 54%, 11%);
+  background: #0d192b;
 }
 
 main {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 350px;
+  height: 600px;
+  background: #14253d;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 15px 35px 15px #00000060;
+}
+
+#cardImg {
+  width: 100%;
+  height: auto;
+}
+
+#cardImg #imgNFT {
+  width: 100%;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+  padding: 0.5rem 0 0.5rem 0;
+  color: #8bacda;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+.auctionData {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+p {
+  font-weight: 300;
+}
+
+.price,
+.timeLeft,
+.creatorData {
+  display: flex;
+  align-items: center;
+}
+
+.price p {
+  font-weight: 600;
+  color: #00fff7;
+  margin-left: 0.5rem;
+}
+
+.timeLeft p {
+  margin-left: 0.5rem;
+}
+
+hr {
+  border: 1px solid #2f415b;
+}
+
+.creatorData img {
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  margin-right: 1rem;
+}
+
+span {
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #00fff7;
+}
+
+#viewIcon {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cardImg:hover #viewIcon,
+#cardImg:hover #hoverColor {
+  opacity: 1;
+}
+
+#hoverColor {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: #00fff780;
+  height: 100%;
+  transform: translateY(-100%);
+  border-radius: 1rem;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  color: hsl(215, 51%, 70%);
+  color: #8bacda;
+  padding-bottom: 1rem;
 }
 .attribution a {
-  color: hsl(178, 100%, 50%);
+  color: #00fff7;
 }
