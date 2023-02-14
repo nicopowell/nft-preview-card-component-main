@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/nicopowell/nft-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://nicopowell-nft-card.netlify.app)
+- Solution URL: [Github](https://github.com/nicopowell/nft-preview-card-component-main)
+- Live Site URL: [Live Site](https://nicopowell-nft-card.netlify.app)
 
 ## My process
 
